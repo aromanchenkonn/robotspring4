@@ -7,102 +7,101 @@ import ru.javabegin.training.spring.interfaces.Robot;
 
 public class ModelT1000 implements Robot {
 
-	private Hand hand;
-	private Leg leg;
-	private Head head;
+    private Hand hand;
+    private Leg leg;
+    private Head head;
 
-	private String color;
-	private int year;
-	private boolean soundEnabled;
+    private String color;
+    private int year;
+    private boolean soundEnabled;
 
-	public ModelT1000() {
-	}
+    public ModelT1000() {
+    }
 
-	public ModelT1000(Hand hand, Leg leg, Head head) {
-		super();
-		this.hand = hand;
-		this.leg = leg;
-		this.head = head;
-	}
+    public ModelT1000(Hand hand, Leg leg, Head head) {
+        super();
+        this.hand = hand;
+        this.leg = leg;
+        this.head = head;
+    }
 
-	public ModelT1000(Hand hand, Leg leg, Head head, String color, int year, boolean soundEnabled) {
-		super();
-		this.hand = hand;
-		this.leg = leg;
-		this.head = head;
-		this.color = color;
-		this.year = year;
-		this.soundEnabled = soundEnabled;
-	}
+    public ModelT1000(Hand hand, Leg leg, Head head, String color, int year, boolean soundEnabled) {
+        super();
+        this.hand = hand;
+        this.leg = leg;
+        this.head = head;
+        this.color = color;
+        this.year = year;
+        this.soundEnabled = soundEnabled;
+    }
 
-	public ModelT1000(String color, int year, boolean soundEnabled) {
-		super();
-		this.color = color;
-		this.year = year;
-		this.soundEnabled = soundEnabled;
-	}
+    public ModelT1000(String color, int year, boolean soundEnabled) {
+        super();
+        this.color = color;
+        this.year = year;
+        this.soundEnabled = soundEnabled;
+    }
 
-	@Override
-	public void action() {
-		head.calc();
-		hand.catchSomething();
-		leg.go();
-		System.out.println("color: " + color);
-		System.out.println("year: " + year);
-		System.out.println("can play sound: " + soundEnabled);
-	}
+    public void action() {
+        head.calc();
+        hand.catchSomething();
+        leg.go();
+        System.out.println("color: " + color);
+        System.out.println("year: " + year);
+        System.out.println("can play sound: " + soundEnabled);
+    }
 
-	@Override
-	public void dance() {
-		System.out.println("T1000 is dancing!");
-	}
 
-	public Hand getHand() {
-		return hand;
-	}
+    public void dance() {
+        System.out.println("T1000 is dancing!");
+    }
 
-	public void setHand(Hand hand) {
-		this.hand = hand;
-	}
+    public Hand getHand() {
+        return hand;
+    }
 
-	public Leg getLeg() {
-		return leg;
-	}
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
 
-	public void setLeg(Leg leg) {
-		this.leg = leg;
-	}
+    public Leg getLeg() {
+        return leg;
+    }
 
-	public Head getHead() {
-		return head;
-	}
+    public void setLeg(Leg leg) {
+        this.leg = leg;
+    }
 
-	public void setHead(Head head) {
-		this.head = head;
-	}
+    public Head getHead() {
+        return head;
+    }
 
-	public String getColor() {
-		return color;
-	}
+    public void setHead(Head head) {
+        this.head = head;
+    }
 
-	public void setColor(String color) {
-		this.color = color;
-	}
+    public String getColor() {
+        return color;
+    }
 
-	public int getYear() {
-		return year;
-	}
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-	public void setYear(int year) {
-		this.year = year;
-	}
+    public int getYear() {
+        return year;
+    }
 
-	public boolean isSoundEnabled() {
-		return soundEnabled;
-	}
+    public void setYear(int year) {
+        this.year = year;
+    }
 
-	public void setSoundEnabled(boolean soundEnabled) {
-		this.soundEnabled = soundEnabled;
-	}
+    public boolean isSoundEnabled() {
+        return soundEnabled;
+    }
+
+    public void setSoundEnabled(boolean soundEnabled) {
+        this.soundEnabled = soundEnabled;
+    }
 
 }
